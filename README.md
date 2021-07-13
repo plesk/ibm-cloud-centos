@@ -18,3 +18,8 @@ vsi_security_group -- The name of the security group that is created. Required f
 TF_VERSION -- The version of the Terraform engine that's used in the Schematics workspace. For this script to run properly it could be kept at 14 (most recent version supported by IBM cloud at time of writing)
 
 floating_ip -- Public floating IP needed for internet access
+
+subnet - A subnet is automatically created with the proper ports open for plesk.
+
+vpc - the name of the VPC that is automatically created for the VSI. 
+
