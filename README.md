@@ -1,25 +1,33 @@
-# Plesk IBM Cloud Terraform Template
-This repository containes the Terraform template used to deploly Plesk to IBM Cloud. This image used by this template contains CentOS 8 with Plesk pre-installed.
+Plesk is the leading WebOps platform to build, secure and run websites, applications and hosting businesses. Available in more than 32 languages across 140 countries in the world, over 2500 managed service providers and over 250k Web Professionals are partnering with Plesk today.
 
-# Variables in variables.tf
+A single control panel and website hosting platform with an intuitive graphical interface, a ready-to-code environment and powerful extensions. Peace of mind with a complete set of security tools and features for your apps, websites, networks, servers and OSes. Easily harden your properties and automate your security. Focus on your business, not on infrastructure management. Schedule server-related tasks and automate intelligent maintenance.
 
-subnet_id -- the ID of the subnet (not the name) it is required for the user to create before deploying.
+Key solution areas include:
 
-ssh_key_name -- the user must add an SSH key before trying to deploy so they are able to login to the server.
+Website Hosting for Unlimited Domains & DNS management
+WordPress Toolkit with automated staging/cloning included
+Support for NodeJS, Ruby, Docker and LAMP stacks w/ Apache or NGINX
+Security & backups across all levels of a website or application stack
+Subscription Management, Account Management and Reseller Management
+100+ Plesk Extensions in the in-app catalog
 
-vsi_instance_name -- This is the name of the Plesk VSI must be a name that is unique in the IBM cloud account
+## Before you begin
 
-vis_profile -- The profile of compute CPU and memory resources to use when creating the virtual server instance. To list available profiles, run the `ibmcloud is instance-profiles` command.
+<!-- List any prereqs including required permissions, capacity requirements, etc. The following info is used as an example. Update accordingly. -->
 
-region -- The region in which the VPC instance is located. Required for users to specify
+* Create a SSH key since it will be needed to deploy and login to the server.
 
-vsi_security_group -- The name of the security group that is created. Required for users to specify
+## Upgrading to a new version
 
-TF_VERSION -- The version of the Terraform engine that's used in the Schematics workspace. For this script to run properly it could be kept at 14 (most recent version supported by IBM cloud at time of writing)
+Plesk will update automatically there is no need to redeploy. To trigger an upgrade of Plesk manually follow the insturctions here https://support.plesk.com/hc/en-us/articles/213408749--How-to-upgrade-Plesk-to-the-next-release
 
-floating_ip -- Public floating IP needed for internet access
+## Uninstalling the software
 
-subnet - A subnet is automatically created with the proper ports open for plesk.
+To uninstall Plesk you can run the command plesk installer --remove-everything
+Or you may just delete the deployed resources.
 
-vpc - the name of the VPC that is automatically created for the VSI. 
+## Getting support
 
+<!-- Reuse the support information (contact info and availability) that your team provided on the Support tab in Partner Center exactly as is. The following is an example. -->
+
+This product is provided and supported by Plesk To open a support ticket with Plesk sign up at https://www.plesk.com/support and choose "Submit a request". Our support is available 24 hours a day, 7 days a week, 365 days a year and is provided in English, Russian, Spanish, German, Portuguese and Japanese languages. 

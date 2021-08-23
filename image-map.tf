@@ -7,6 +7,6 @@ locals {
 			"jp-tok" = "r022-c6fdff0a-83b9-4e52-b9f1-c9bc03d8e635"
 			"jp-osa" = "r034-a2d1ea4a-a69c-4211-af1e-5d08ea248782"
 			"au-syd" = "r026-ade4bf73-f5c6-4077-a223-75d276060fa2"
-			#"ca-tor" = "r038-408d9178-d826-43f2-8510-15ea5f431806"
+			"ca-tor" = "r038-051c013f-7569-48e3-8094-84a7c31ad57e"
         }
 }
