@@ -13,8 +13,6 @@ Subscription Management, Account Management and Reseller Management
 
 ## Before you begin
 
-<!-- List any prereqs including required permissions, capacity requirements, etc. The following info is used as an example. Update accordingly. -->
-
 * Create a SSH key since it will be needed to deploy and login to the server.
 
 ## Upgrading to a new version
@@ -27,7 +25,5 @@ To uninstall Plesk you can run the command plesk installer --remove-everything
 Or you may just delete the deployed resources.
 
 ## Getting support
-
-<!-- Reuse the support information (contact info and availability) that your team provided on the Support tab in Partner Center exactly as is. The following is an example. -->
 
 This product is provided and supported by Plesk To open a support ticket with Plesk sign up at https://www.plesk.com/support and choose "Submit a request". Our support is available 24 hours a day, 7 days a week, 365 days a year and is provided in English, Russian, Spanish, German, Portuguese and Japanese languages. 
